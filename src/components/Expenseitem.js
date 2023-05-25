@@ -1,6 +1,13 @@
+
+import './ExpenseItem.css'
+
+
 function ExpenseItem() {
-    return (
-      <div>
+
+  const locationOfExpenditure = 'Grocery Store'
+    
+  return (
+      <div className='container'>
          <h2>Expense Item!</h2> 
         <div>
           <h2>Food Rs 10</h2>
@@ -11,6 +18,7 @@ function ExpenseItem() {
         <div>
           <h2>Movies Rs 200</h2>
         </div>
+        <p>You spent money at: {locationOfExpenditure}</p>
       </div>
     );
   }
