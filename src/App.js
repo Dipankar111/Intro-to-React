@@ -1,22 +1,24 @@
-import ExpenseItem from "./components/Expenseitem";
+import React from 'react';
+import ExpenseItem from './components/ExpenseItem';
 
 function App() {
   const expenses = [
-    {title: "Food", locationOfExpenditure:"Grocery", amount: "Rs 10"},
-    {title: "Petrol", locationOfExpenditure:"Travel", amount: "Rs 100" },
-    {title: "Movies", locationOfExpenditure:"Entertainment", amount: "Rs 100" },
-]
+    { title: 'Food', location: 'Grocery', amount: 'Rs 10', date: new Date(2023, 3, 22) },
+    { title: 'Petrol', location: 'Travel', amount: 'Rs 100', date: new Date(2023, 2, 11) },
+    { title: 'Movies', location: 'Entertainment', amount: 'Rs 100', date: new Date(2023, 5, 17) },
+  ];
 
   return (
     <div>
       <h1>Let's get started!</h1>
       <div>
-        {expenses.map((expense) => (
+        {expenses.map((expense, index) => (
           <ExpenseItem
-           
+            key={index}
             title={expense.title}
-            locationOfExpenditure={expense.locationOfExpenditure}
+            location={expense.location}
             amount={expense.amount}
+            date={expense.date}
           />
         ))}
       </div>
