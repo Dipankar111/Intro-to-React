@@ -2,7 +2,7 @@
 import React from 'react';
 import ExpenseDate from './ExpenseDate';
 import ExpenseDetails from './Expensedetails';
-import './ExpenseItem.css';
+import '../UI/ExpenseItem.css';
 
 function ExpenseItem(props) {
   return (

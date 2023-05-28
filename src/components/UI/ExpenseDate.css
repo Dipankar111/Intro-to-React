@@ -1,0 +1,10 @@
+.expense-date {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  .expense-date div {
+    margin-bottom: 5px;
+  }
+  

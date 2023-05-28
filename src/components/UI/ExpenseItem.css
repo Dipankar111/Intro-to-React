@@ -1,0 +1,18 @@
+.container {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.container .expense-date {
+  font-weight: bold;
+}
+
+.container .expense-details {
+  margin-top: 10px;
+}
+
+.container .expense-details div {
+  margin-bottom: 5px;
+}
+

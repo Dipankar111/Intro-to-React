@@ -1,0 +1,10 @@
+.expense-details {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .expense-details div {
+    margin-bottom: 5px;
+  }
+  
