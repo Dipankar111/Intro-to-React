@@ -2,23 +2,20 @@
 import './ExpenseItem.css'
 
 
-function ExpenseItem() {
-
-  const locationOfExpenditure = 'Grocery Store'
-    
+function ExpenseItem(props) {
   return (
       <div className='container'>
          <h2>Expense Item!</h2> 
         <div>
-          <h2>Food Rs 10</h2>
+          <h2>{props.locationOfExpenditure}</h2>
         </div>
         <div>
-          <h2>Petrol Rs 100</h2>
+          <h2>{props.title}</h2>
         </div>
         <div>
-          <h2>Movies Rs 200</h2>
+          <h2>{props.amount}</h2>
         </div>
-        <p>You spent money at: {locationOfExpenditure}</p>
+        
       </div>
     );
   }
